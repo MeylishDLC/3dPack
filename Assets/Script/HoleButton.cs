@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Script
 {
-    public class ButtonPlayerFall: MonoBehaviour
+    public class HoleButton: MonoBehaviour
     {
         [SerializeField] private LayerMask playerLayer;
         private void OnTriggerEnter(Collider other)

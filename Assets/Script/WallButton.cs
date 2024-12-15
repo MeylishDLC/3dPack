@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Script
 {
-    public class ButtonObjectDisabler : MonoBehaviour
+    public class WallButton : MonoBehaviour
     {
         [SerializeField] private GameObject objectToDisable;
         [SerializeField] private LayerMask groundLayer;

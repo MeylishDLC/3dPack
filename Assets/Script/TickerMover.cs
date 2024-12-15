@@ -2,7 +2,7 @@
 
 namespace Script
 {
-    public class PendulumMover: MonoBehaviour
+    public class TickerMover: MonoBehaviour
     {
         [SerializeField] private Transform pivotTransform;
         [SerializeField] private float maxAngle;

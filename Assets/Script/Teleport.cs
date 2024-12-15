@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 namespace Script
 {
-    public class PortalButton: MonoBehaviour
+    public class Teleport: MonoBehaviour
     {
         [SerializeField] private LayerMask playerLayerMask;
         [SerializeField] private int sceneToTeleportIndex;

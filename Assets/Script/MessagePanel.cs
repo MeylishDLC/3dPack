@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Script
 {
-    public class StartMessage: MonoBehaviour
+    public class MessagePanel: MonoBehaviour
     {
         private void Start()
         {

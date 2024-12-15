@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace Script
 {
-    public class ButtonMessageShower : MonoBehaviour
+    public class PanelButton : MonoBehaviour
     {
         [SerializeField] private Image messagePanel;
         [SerializeField] private LayerMask playerLayerMask;
