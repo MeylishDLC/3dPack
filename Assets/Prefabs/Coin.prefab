@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b41c2fdd50a042e088c836a5a4fda5e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinValue: 19
+  coinValue: 1
   playerLayer:
     serializedVersion: 2
     m_Bits: 64

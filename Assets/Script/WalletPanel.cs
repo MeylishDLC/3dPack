@@ -11,7 +11,7 @@ namespace Script
         private void Awake()
         {
             _walletBalanceText = GetComponent<TMP_Text>();
-            _walletBalanceText.text = $"{_currentWalletBalance} MONEY";
+            _walletBalanceText.text = $"БАЛАНС {_currentWalletBalance}";
             Coin.OnCoinCollected += UpdateCoinAmount;
         }
         private void OnDestroy()
@@ -21,7 +21,7 @@ namespace Script
         private void UpdateCoinAmount(int amount)
         {
             _currentWalletBalance += amount;
-            _walletBalanceText.text = $"{_currentWalletBalance} MONEY";
+            _walletBalanceText.text = $"БАЛАНС {_currentWalletBalance}";
         }
     }
 }
