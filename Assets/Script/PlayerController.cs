@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Script
 {
@@ -15,6 +16,8 @@ namespace Script
         [SerializeField] private float jumpPower = 5f;
         [SerializeField] private KeyCode jumpButton = KeyCode.Space;
 
+        [SerializeField] private float fallThreshold = -10f;
+        
         private Rigidbody _rb;
         private bool _isGrounded;
         private void Start()
@@ -25,6 +28,7 @@ namespace Script
         {
             HandleMovement();
             HandleJump();
+            HandleFall();
         }
         private void HandleMovement()
         {
@@ -43,6 +47,13 @@ namespace Script
             {
                 _rb.AddForce(Vector3.up * jumpPower, ForceMode.Impulse);
                 _isGrounded = false;
+            }
+        }
+        private void HandleFall()
+        {
+            if (transform.position.y < fallThreshold)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
         private void OnCollisionEnter(Collision other)
