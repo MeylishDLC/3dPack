@@ -12,8 +12,8 @@ namespace Script
         {
             if (((1 << other.gameObject.layer) & playerLayer.value) != 0)
             {
-                var spawnPos = new Vector3(other.transform.position.x,
-                    other.transform.position.y + positionAbovePlayer, positionAbovePlayer);
+                var spawnPos = new Vector3(other.gameObject.transform.position.x,
+                    other.gameObject.transform.position.y + positionAbovePlayer, other.gameObject.transform.position.z);
                 Instantiate(attackObjectPrefab, spawnPos, Quaternion.identity);
             } 
         }
